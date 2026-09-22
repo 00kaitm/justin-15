@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cumpleaños de Justin · 15 años</title>
+  <meta name="description" content="Invitación para la familia Ruiz: celebración de los 15 años de Justin en House of Adoration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <p class="ornament" aria-hidden="true">✝ 🎉 ✝</p>
+    <p class="eyebrow">Con mucho cariño invitamos a la</p>
+    <h1>Familia Ruiz</h1>
+
+    <p class="salute">Queridos amigos:</p>
+    <blockquote class="message">
+      Es difícil creer que Justin ya tiene 15 años, y hoy nos reunimos para celebrar este día tan
+      especial. Estoy bien orgulloso del hombre en que te estás convirtiendo. ¡Feliz cumpleaños
+      número 15!
+    </blockquote>
+
+    <h2 class="section-title">Detalles de la celebración</h2>
+    <dl class="details">
+      <div class="detail">
+        <dt>🎂 Cumpleaños</dt>
+        <dd>20 de octubre, 2026</dd>
+      </div>
+      <div class="detail">
+        <dt>📅 Fecha de la fiesta</dt>
+        <dd id="party-date">Por confirmar — ¡pronto más detalles!</dd>
+      </div>
+      <div class="detail">
+        <dt>🕒 Hora</dt>
+        <dd id="party-time">Por confirmar</dd>
+      </div>
+      <div class="detail">
+        <dt>📍 Lugar</dt>
+        <dd>House of Adoration</dd>
+      </div>
+    </dl>
+
+    <section class="rsvp">
+      <h2 class="section-title">Confirma tu asistencia</h2>
+      <p class="hint">Por favor confirma antes de la fecha de la fiesta.</p>
+      <form id="rsvpForm">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label class="field">
+          Nombre completo
+          <input type="text" name="nombre" required autocomplete="name">
+        </label>
+
+        <fieldset class="field">
+          <legend>¿Podrás asistir?</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="asistencia" value="Sí" required> Sí, ahí estaré</label>
+            <label class="choice"><input type="radio" name="asistencia" value="No"> No podré asistir</label>
+            <label class="choice"><input type="radio" name="asistencia" value="Tal vez"> Tal vez</label>
+          </div>
+        </fieldset>
+
+        <label class="field">
+          Número de personas (incluyéndote)
+          <input type="number" name="numero_personas" min="1" max="20" value="1" inputmode="numeric">
+        </label>
+
+        <label class="field">
+          Mensaje para Justin (opcional)
+          <textarea name="mensaje" rows="3" maxlength="500"></textarea>
+        </label>
+
+        <button type="submit" id="submitBtn">Enviar confirmación</button>
+        <p id="rsvpStatus" class="status" role="status"></p>
+      </form>
+      <div id="thanks" class="thanks" hidden>
+        <p>🎉 ¡Gracias! Tu confirmación fue recibida.</p>
+      </div>
+    </section>
+
+    <p class="footer">¡Los esperamos con mucha alegría!</p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
