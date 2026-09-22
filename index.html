@@ -11,7 +11,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="card">
+  <div id="cover" class="cover">
+    <div class="cover-photo-wrap">
+      <img id="coverPhoto" src="cover.jpg" alt="Justin"
+           onerror="this.onerror=null;this.src='cover-placeholder.svg'">
+    </div>
+    <h1 class="cover-title">¡Feliz Cumpleaños, Justin!</h1>
+    <p class="cover-sub">15 años</p>
+    <button type="button" id="openBtn" class="open-btn">Abrir tarjeta 💌</button>
+  </div>
+  <noscript><style>#cover { display: none; } #inside { display: block !important; }</style></noscript>
+
+  <main id="inside" class="card" hidden>
     <p class="ornament" aria-hidden="true">✝ 🎉 ✝</p>
     <p class="eyebrow">Con mucho cariño invitamos a la</p>
     <h1>Familia Ruiz</h1>
@@ -83,6 +94,7 @@
 
     <p class="footer">¡Los esperamos con mucha alegría!</p>
   </main>
+  <script src="cover.js"></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

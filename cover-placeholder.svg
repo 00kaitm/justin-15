@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" role="img" aria-label="Foto de Justin próximamente">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22335c"/>
+      <stop offset="100%" stop-color="#0f1a33"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="600" fill="url(#bg)"/>
+  <g stroke="#e8d5a8" stroke-width="2" opacity="0.8">
+    <line x1="120" y1="228" x2="132" y2="420"/>
+    <line x1="360" y1="208" x2="345" y2="420"/>
+    <line x1="240" y1="198" x2="240" y2="420"/>
+  </g>
+  <ellipse cx="120" cy="196" rx="42" ry="52" fill="#b8903f"/>
+  <ellipse cx="360" cy="176" rx="38" ry="48" fill="#e8d5a8"/>
+  <ellipse cx="240" cy="164" rx="46" ry="56" fill="#b8903f"/>
+  <circle cx="240" cy="332" r="92" fill="#faf6ee" opacity="0.12"/>
+  <text x="240" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="120" font-weight="700"
+        fill="#faf6ee" text-anchor="middle">15</text>
+  <text x="240" y="472" font-family="Georgia, serif" font-size="24" fill="#e8d5a8" text-anchor="middle"
+        letter-spacing="3">✝ JUSTIN ✝</text>
+</svg>

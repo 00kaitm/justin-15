@@ -28,3 +28,9 @@ Then open http://localhost:3000
 ## Party date
 The party date and time are placeholders in `index.html` (`#party-date`, `#party-time`) until
 they're confirmed.
+
+## Front cover photo
+The card opens like a greeting card: a front cover with a photo and "¡Feliz Cumpleaños, Justin!",
+then a tap reveals the invitation inside. To add a real photo, save it in this folder as
+`cover.jpg` (any portrait-ish photo works well) — no code change needed. Until then, a decorative
+placeholder shows automatically.
