@@ -115,7 +115,9 @@ fieldset.field legend { padding: 0; margin-bottom: 6px; }
 .choice { font-weight: 400; display: flex; align-items: center; gap: 8px; }
 .choice input { width: 18px; height: 18px; }
 
-.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+/* display:none (rather than off-screen positioning) keeps phone autofill from ever filling this
+   field, which would otherwise silently block a real person's submission. */
+.hp { display: none; }
 
 button[type=submit] {
   width: 100%; font: inherit; font-size: 16px; font-weight: 600; padding: 13px 16px;
